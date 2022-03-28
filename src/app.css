@@ -30,7 +30,7 @@ body{
     padding: 0.3em 2em;
     
 }
-.form-group > lable{
+.form-group > label{
     color: white;
     font-size: 1.5rem;
     margin-bottom: 0.25rem;
@@ -39,12 +39,16 @@ body{
     
     
 }
+ #category select{
+height: 20px;
+}
 
 input{
     height: 20px;
     margin-bottom: 5px;
-    /* margin: 8px; */
+    
 }
+
 .btn{
     background-color: hsl(200, 100%, 50%);
     color: white;
