@@ -17,10 +17,11 @@ body{
     align-items: center;
     justify-content: flex-end;
     flex-wrap: wrap;
-    background-color: rgb(28, 31, 11) ;
+    background-color: #FEAC00;
     height: 70px;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
     padding: 0 2rem;
+    border-bottom: black 2px solid;
 }
 .form-group{
     display: flex;
@@ -75,6 +76,7 @@ input{
      transition: 150ms;
      cursor: pointer;
      transform: perspective(1000px) rotateY(var(--rotate-y, 0));
+     font-weight: bold;
    
 }
 .card:hover{

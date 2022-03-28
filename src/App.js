@@ -1,6 +1,7 @@
 import React, {useState, useEffect, useRef} from "react";
 import FlashCardList from "./components/FlashCardList";
 import './app.css'
+import './mobile.css'
 import axios from 'axios'
 
 
@@ -59,8 +60,9 @@ function App() {
     <>
     
     <form className="header" onSubmit={handleSubmit}>
+      
     <div className="form-group">
-      <lable htmlFor="category">Category</lable>
+      <label htmlFor="category">Category</label>
       <select id="category" ref={categoryEl}>
         {categories.map(category=>{
           return <option value={category.id} key={category.id}>{category.name}</option>
@@ -68,7 +70,7 @@ function App() {
       </select>
       </div>
       <div className="form-group">
-        <lable htmlFor='amount'>Number Of Questions</lable>
+        <label htmlFor='amount'>Number Of Questions</label>
         <input type="number" id='amount' min="1" step={1} defaultValue={20}
         ref={amountEl}/>
       </div>
