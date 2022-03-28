@@ -1,11 +1,15 @@
 body{
     background-color: hsl(200, 100%, 50%);
-    
+    background-image: url('https://opinionstage-res.cloudinary.com/images/f_auto,q_auto/v1594283240/Quiz-Think-Question-Thinking-Brain-Answer-2004314/Quiz-Think-Question-Thinking-Brain-Answer-2004314.jpg?_i=AA');
+    background-repeat: no-repeat;
     margin: 0;
+    background-size: cover;
+   
 }
 .container{
     max-width: 1700px;
     margin: 5rem;
+   
 
 }
 .header{
@@ -47,7 +51,7 @@ input{
     border-radius: .3em;
     border: none;
     cursor: pointer;
-    /* margin-top: 10px; */
+    margin-bottom: 5px;
 }
 .btn:hover{
     background-color: hsl(200, 100%, 40%);
@@ -79,7 +83,7 @@ input{
 }
 .card.flip{
     --rotate-y:180deg;
-    background-color: black;
+    background-color: #0094F8;
     color: white;
 }
 .card .front{
@@ -100,7 +104,7 @@ input{
 }
 .flashcard-option{
     color: #555;
-    font-size: .75rem;
+    font-size: 0.85rem;
     margin-top: 0.25rem;
 }
 .flashcard-option:first-child{
