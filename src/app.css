@@ -1,0 +1,108 @@
+body{
+    background-color: hsl(200, 100%, 50%);
+    
+    margin: 0;
+}
+.container{
+    max-width: 1700px;
+    margin: 5rem;
+
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    background-color: rgb(28, 31, 11) ;
+    height: 70px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
+    padding: 0 2rem;
+}
+.form-group{
+    display: flex;
+    flex-direction: row;
+    margin: .5rem;
+    padding: 0.3em 2em;
+    
+}
+.form-group > lable{
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+    height: 20px;
+    margin-right: 8px;
+    
+    
+}
+
+input{
+    height: 20px;
+    margin-bottom: 5px;
+    /* margin: 8px; */
+}
+.btn{
+    background-color: hsl(200, 100%, 50%);
+    color: white;
+    padding: .5em 1em;
+    border-radius: .3em;
+    border: none;
+    cursor: pointer;
+    /* margin-top: 10px; */
+}
+.btn:hover{
+    background-color: hsl(200, 100%, 40%);
+}
+.card-grid{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill,  minmax(200px, 1fr));
+    gap: 1rem;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: .25rem;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
+    background-color: white;
+    transform-style: preserve-3d;
+     border: 2px solid black;
+     transition: 150ms;
+     cursor: pointer;
+     transform: perspective(1000px) rotateY(var(--rotate-y, 0));
+   
+}
+.card:hover{
+    --translate-y:-2px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .7);
+}
+.card.flip{
+    --rotate-y:180deg;
+    background-color: black;
+    color: white;
+}
+.card .front{
+    left: 0;
+}
+.card .front,
+.card .back{
+    position: absolute;
+    padding: 1rem;
+    backface-visibility: hidden;
+   
+}
+.card .back{
+    transform: rotateY(180deg);
+}
+.flashcard-options{
+    margin-top: .5rem;
+}
+.flashcard-option{
+    color: #555;
+    font-size: .75rem;
+    margin-top: 0.25rem;
+}
+.flashcard-option:first-child{
+    margin-top: 0;
+}
